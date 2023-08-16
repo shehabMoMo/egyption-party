@@ -1,0 +1,117 @@
+:root{
+    --main-color: rgba(214, 46, 51 , 0.6);
+    --sec-color: #ccc;
+    --ther-color: #777;
+    scroll-behavior: auto;
+}
+.SegoeUI-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover{
+    color: var(--main-color);
+}
+#sidebar{
+    width: 0PX;
+    z-index: 999999;
+    overflow-x: hidden;
+    transition: width 0.5s;
+}
+.icon-con i{
+    margin: 20px 50px 20px 0px;
+    right: 0;
+    cursor: pointer;
+}
+#closeBar,.sidebar-item a{
+    transition: all 0.5s;
+}
+#closeBar:hover,.sidebar-item a:hover{
+    color: #D62E33 !important;
+}
+.active{
+    color: #D62E33 !important;
+}
+.sidebar-item,.icon-con{
+    padding: 20px 8px 20px 32px;
+}
+.sidebar-item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#home{
+    background-image: url(../img/party.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    z-index: 1;
+}
+#home h1{
+    font-size: 3.75em;
+}
+#home .home-content{
+    transition: all 0.5s;
+}
+.layer{
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.open-icon{
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+}
+/* duration section start */
+#duration .inner .inner-head{
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+#duration .inner .inner-content{
+    background-color: var(--sec-color);
+    display: none;
+}
+/* duration section end */
+/* count section start */
+#details{
+    margin-bottom: 100px;
+    background-image: url(../img/img-count.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 24%;
+    font-size: 1.875em;
+}
+/* count section end */
+/* contact section start */
+#contact{
+    padding: 100px 0;
+}
+#contact p{
+    color: var(--ther-color);
+}
+#contact h5,.social-contact{
+    text-align: left;
+}
+#contact .email-link{
+    text-decoration: none;
+    color: var(--ther-color);
+}
+#contact .email-link:hover{
+    color: var(--main-color);
+}
+.social-contact a{
+    border: 1px solid var(--ther-color);
+    padding: 7px 12px;
+    text-decoration: none;
+    color: var(--ther-color);
+}
+.social-contact a:hover{
+    background-color: #D62E33;
+    border-color: #D62E33;
+    color: white !important;
+}
+.area-counter{
+    color: #D62E33;
+}
+/* contact section end */
